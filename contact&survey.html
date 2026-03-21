@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Survey - My Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html" class="nav-btns">Home</a>
+    <a href="./music&games.html" class="nav-btns">Music & Games</a>
+    <a href="./contact&survey.html" class="nav-btns active">Contact & Survey</a>
+    <a href="./dream-vacation.html" class="nav-btns">Dream Vacation</a>
+  </nav>
+  <header class="styled-header">
+    <h1>
+      Contact & Survey
+    </h1>
+    <p>Take a survey! Please don't contact me.</p>
+  </header>
+  <main>
+    <section class="bordered-spaced-box">
+      <h1>Survey</h1>
+      <p>Please note that the survey information does not get received.</p>
+      <div>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+          <p>
+            <label for="name">Your Name (optional):</label> <br>
+            <input type="text" name="name" id="name" placeholder="Anonymous">
+          </p>
+          <p>
+            <label for="rating">How would you rate my website?</label> <br>
+            <input type="range" name="rating" id="rating" min="0" max="5" value="3">
+          </p>
+          <label>How can I improve my website?</label> <br>
+          <textarea name="comments" placeholder="Write your comments and suggestions here..." cols="80" rows="10" required></textarea> <br>
+          <input type="submit">
+        </form>
+      </div>
+    </section>
+
+    <section class="bordered-spaced-box">
+      <h1>Contact Info</h1>
+      <address>
+        Firstname Lastname <br>
+        example@email.com <br>
+        (123)-456-7890
+      </address>
+    </section>
+  </main>
+  <footer class="info-footer">
+    <p>Images and icons used on this website were found royalty-free on <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></p>
+  </footer>
+</body>
+
+</html>

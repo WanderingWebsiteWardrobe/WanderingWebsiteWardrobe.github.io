@@ -4,33 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio - Homepage</title>
-  <style>
-    body {
-      background-color: beige;
-    }
-  </style>
+  <title>Homepage - My Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <header>
+  <nav>
+    <a href="./index.html" class="nav-btns active">Home</a>
+    <a href="./music&games.html" class="nav-btns">Music & Games</a>
+    <a href="./contact&survey.html" class="nav-btns">Contact & Survey</a>
+    <a href="./dream-vacation.html" class="nav-btns">Dream Vacation</a>
+  </nav>
+  <header class="styled-header">
     <h1>
       <img src="./images/house-icon.png" alt="House icon" width="30">
-      Home Page
+      Homepage
     </h1>
     <p>Welcome to my portfolio!</p>
   </header>
   <main>
-    <div>
-      <h2>Visit my <a href="./about.html">About</a> Page:</h2>
-      <iframe src="./about.html" width="300" height="200"></iframe>
-    </div>
-    <div>
-      <h2>Check out my <a href="./recipes.html">Recipes</a> Page:</h2>
+    <section class="spaced">
+      <img src="./images/notebook-and-pencil.png" alt="Notebook icon" width="100">
+      <h1>About Me</h1>
+      <p>Hello! I'm learning web development, and this is my personal website.</p>
+    </section>
+    <section class="spaced">
+      <img src="./images/cooking-campfire.png" alt="Cooking campfire icon" width="100">
+      <h1>My Recipes</h1>
+      <p>Here you can find my weird recipes!</p>
+
+      <h2>Orange Marmalade Burrito</h2>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Flour Tortilla</li>
+        <li>Orange Marmalade</li>
+        <li>Whipped Cream</li>
+      </ul>
+      <h3>How to make it:</h3>
+      <ol>
+        <li>Warm a tortilla in the microwave.</li>
+        <li>Spread a very thin layer of orange marmalade all over one side of it.</li>
+        <li>Spray a thick strip of whipped cream along it.</li>
+        <li>Roll the tortilla in a tube.</li>
+        <li>Eat.</li>
+      </ol>
+    </section>
+    <!-- <section class="bordered-spaced-box" id="recipes">
+      <h2>Check Out My <a href="./recipes.html">Recipes</a>:</h2>
       <iframe src="./recipes.html" width="300" height="200"></iframe>
-    </div>
+    </section> -->
   </main>
-  <footer><a href="./sources.html">Royalty-free image</a> sources</footer>
+  <footer class="info-footer">
+    <p>Images and icons used on this website were found royalty-free on <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></p>
+  </footer>
 </body>
 
 </html>
