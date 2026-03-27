@@ -1,3 +1,4 @@
+/* General */
 body {
   background-color: rgb(251, 243, 213);
   color: #333;
@@ -9,6 +10,11 @@ h1, h2 {
 h3 {
   font-weight: 100;
 }
+a {
+  color: coral;
+}
+
+/* Navbar */
 nav {
   background-color: rgb(214, 218, 200);
   width: 100%;
@@ -34,20 +40,35 @@ nav .active {
   background-color: rgb(156, 175, 170);
   color: #333;
 }
-a {
-  color: coral;
+
+/* Title bar */
+.styled-header {
+  border-top: 2px solid rgb(156, 175, 170);
+  border-bottom: 2px solid rgb(156, 175, 170);
+  background-color: rgb(214, 218, 200);
+  color: #333;
+  padding: 2px 20px;
+  margin: 8px -8px;
+  text-align: center;
+}
+.styled-header > h1 {
+  font-weight: 100;
 }
 
+/* Content container */
+.bordered-spaced-box {
+  margin: 10px auto;
+  padding: 20px;
+  background-color: rgb(214, 218, 200);
+  border: 2px solid rgb(156, 175, 170);
+}
+
+/* Form */
 form {
   border: 2px solid rgb(156, 175, 170);
   background-color: rgb(251, 243, 213);
   color: #333;
   padding: 20px;
-}
-input[type="range"] {
-  accent-color: rgb(156, 175, 170);;
-  margin: 10px 0px;
-  cursor: pointer;
 }
 input[type="text"], textarea {
   background-color: rgb(214, 218, 200);
@@ -63,6 +84,11 @@ textarea {
   min-height: fit-content;
   max-height: 400px;
 }
+input[type="range"] {
+  accent-color: rgb(156, 175, 170);;
+  margin: 10px 0px;
+  cursor: pointer;
+}
 input[type="submit"] {
   background-color: rgb(156, 175, 170);
   /* border: 2px solid rgb(251, 243, 213); */
@@ -73,17 +99,11 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.styled-header {
-  border-top: 2px solid rgb(156, 175, 170);
-  border-bottom: 2px solid rgb(156, 175, 170);
-  background-color: rgb(214, 218, 200);
-  color: #333;
-  padding: 2px 20px;
-  margin: 8px -8px;
-  text-align: center;
-}
-.styled-header > h1 {
-  font-weight: 100;
+/* Image bordering */
+.img-row {
+  background-color: #333;
+  padding: 10px;
+  width: max-content;
 }
 .img-container {
   border: 10px solid #333;
@@ -98,21 +118,11 @@ input[type="submit"] {
   font-weight: 100;
   margin: 5px;
 }
+
+/* Ect */
 .bordered {
   border: 2px solid #333;
 }
-.bordered-spaced-box {
-  margin: 10px auto;
-  padding: 20px;
-  background-color: rgb(214, 218, 200);
-  border: 2px solid rgb(156, 175, 170);
-}
-.img-row {
-  background-color: #333;
-  padding: 10px;
-  width: max-content;
-}
-
 .spaced {
   padding: 10px;
   margin: 10px;
@@ -131,6 +141,7 @@ input[type="submit"] {
   margin: 10px;
 }
 
+/* Footer */
 .info-footer {
   background-color: #333;
   color: rgb(156, 175, 170);
