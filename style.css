@@ -1,3 +1,10 @@
+/*
+Light-orange: #EFBC9B / rgb(239, 188, 155)
+Light-yellow: #FBF3D5 / rgb(251, 243, 213)
+Light-green: #D6DAC8 / rgb(214, 218, 200)
+Dark-green: #9CAFAA / rgb(156, 175, 170)
+*/
+
 /* Variables */
 :root {
   --nav-color: #222;
@@ -38,25 +45,20 @@ p {
 
 /* Navbar */
 nav {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  
-  /* width: 100%; */
-  /* padding: 8px; */
+  align-items: center;  
   margin: -8px;
 
   background-color: var(--nav-color);
   text-shadow: 2px 2px 5px black;
-
   border-bottom: 2px solid #444;
 }
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
+  /* flex: 1; */
   justify-content: center;
   gap: 2px;
   margin: 16px 0px;
@@ -64,16 +66,14 @@ nav ul {
   list-style-type: none;
 }
 .nav-btns {
-  border: 1px solid #444;
-  background-color: var(--sub-nav-color);
-  color: #999;
   padding: 3px 10px;
   margin: 2px;
-  text-decoration: none;
-
+  border: 1px solid #444;
   border-radius: 5px;
-  /* box-shadow: 1px 1px 1px rgb(156, 175, 170); */
+  background-color: var(--sub-nav-color);
   box-shadow: inset 1px 1px 1px #555, 1px 1px 1px black;
+  color: #999;
+  text-decoration: none;
 }
 .nav-btns:hover {
   /* border: 1px solid rgb(251, 243, 213); */
@@ -92,7 +92,10 @@ nav .active {
   box-shadow: inset 2px 2px 5px black, inset -1px -1px 1px #444;
 }
 nav #website-name {
-  flex: 1;
+  /* flex: 1 0 0; */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
   text-align: left;
   padding: 4px 40px;
 
